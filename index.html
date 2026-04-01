@@ -3,121 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Intellight KZ — Подготовка к SAT</title>
+<title>Intellight KZ — Подготовка к SAT в Казахстане</title>
+<meta name="description" content="Подготовка к SAT в Казахстане. Средний рост баллов +280. 150+ учеников. Бесплатный пробный урок — запишись сейчас!">
+<meta property="og:title" content="Intellight KZ — Подготовка к SAT">
+<meta property="og:description" content="Средний рост +280 баллов. 150+ учеников. Бесплатный пробный урок!">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#7C3AED">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;background:#F4F0FF;background-image:radial-gradient(ellipse 900px 600px at 50% 0%,rgba(139,92,246,0.12),transparent),radial-gradient(ellipse 600px 400px at 80% 100%,rgba(219,39,119,0.06),transparent),radial-gradient(ellipse 500px 400px at 10% 60%,rgba(99,102,241,0.06),transparent)}
-.page{max-width:420px;margin:0 auto;padding:48px 20px 40px}
+body{font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;background:#F4F0FF;background-image:radial-gradient(ellipse 900px 600px at 50% 0%,rgba(139,92,246,0.14),transparent),radial-gradient(ellipse 600px 400px at 80% 100%,rgba(219,39,119,0.07),transparent),radial-gradient(ellipse 500px 400px at 10% 60%,rgba(99,102,241,0.07),transparent)}
+.page{max-width:420px;margin:0 auto;padding:48px 20px 48px}
+
+/* Avatar */
 .avatar-area{text-align:center;margin-bottom:20px}
-.avatar-ring{display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#8B5CF6,#EC4899,#8B5CF6);background-size:200% 200%;animation:ring 4s ease infinite;box-shadow:0 8px 32px rgba(139,92,246,0.25)}
+.avatar-ring{display:inline-block;padding:4px;border-radius:50%;background:linear-gradient(135deg,#8B5CF6,#EC4899,#8B5CF6);background-size:200% 200%;animation:ring 4s ease infinite;box-shadow:0 8px 32px rgba(139,92,246,0.3)}
 @keyframes ring{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-.avatar-img{width:100px;height:100px;border-radius:50%;background:white;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:800;color:#7C3AED;letter-spacing:-2px}
+.avatar-img{width:104px;height:104px;border-radius:50%;background:white;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:#7C3AED;letter-spacing:-2px}
+
+/* Profile */
 .profile{text-align:center;margin-bottom:28px}
-.name{font-size:24px;font-weight:800;color:#1E1B4B;margin-bottom:2px;letter-spacing:-0.5px}
+.name{font-size:26px;font-weight:800;color:#1E1B4B;margin-bottom:2px;letter-spacing:-0.5px}
 .name em{font-style:normal;color:#7C3AED}
-.handle{font-size:13px;color:#8B5CF6;font-weight:600;margin-bottom:8px}
-.tagline{font-size:14px;color:#6B7280;line-height:1.5;max-width:300px;margin:0 auto}
-.stats{display:flex;gap:12px;margin-bottom:28px}
-.stat-card{flex:1;background:white;border-radius:16px;padding:16px 8px;text-align:center;box-shadow:0 2px 12px rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.08);transition:transform 0.2s}
-.stat-card:hover{transform:translateY(-3px)}
-.stat-num{font-size:24px;font-weight:800;color:#7C3AED}
+.handle{font-size:13px;color:#8B5CF6;font-weight:600;margin-bottom:10px}
+.tagline{font-size:14px;color:#6B7280;line-height:1.6;max-width:300px;margin:0 auto}
+
+/* Stats */
+.stats{display:flex;gap:10px;margin-bottom:28px}
+.stat-card{flex:1;background:white;border-radius:18px;padding:16px 6px;text-align:center;box-shadow:0 2px 12px rgba(139,92,246,0.09);border:1px solid rgba(139,92,246,0.09);transition:transform 0.2s,box-shadow 0.2s}
+.stat-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(139,92,246,0.14)}
+.stat-num{font-size:22px;font-weight:800;color:#7C3AED}
 .stat-label{font-size:10px;color:#9CA3AF;text-transform:uppercase;letter-spacing:0.8px;margin-top:4px;font-weight:600}
+
+/* Section title */
 .section-title{text-align:center;font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:#A78BFA;font-weight:700;margin:32px 0 16px;display:flex;align-items:center;gap:16px}
-.section-title::before,.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(139,92,246,0.2),transparent)}
-.btn{display:flex;align-items:center;gap:14px;width:100%;padding:18px 22px;margin-bottom:12px;border-radius:16px;border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:white;text-decoration:none;cursor:pointer;transition:all 0.25s;position:relative;overflow:hidden}
+.section-title::before,.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(139,92,246,0.25),transparent)}
+
+/* CTA Buttons */
+.btn{display:flex;align-items:center;gap:14px;width:100%;padding:18px 22px;margin-bottom:12px;border-radius:18px;border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:white;text-decoration:none;cursor:pointer;transition:all 0.25s;position:relative;overflow:hidden}
 .btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0)}
 .btn .ic{font-size:22px;flex-shrink:0;width:28px;text-align:center}
 .btn .arr{margin-left:auto;opacity:0.7;font-size:18px;transition:transform 0.3s,opacity 0.3s}
 .btn:hover .arr{transform:translateX(5px);opacity:1}
 .btn::after{content:'';position:absolute;top:-50%;left:-60%;width:40%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);transform:rotate(25deg);animation:sheen 3.5s ease-in-out infinite}
 @keyframes sheen{0%{left:-60%}40%,100%{left:120%}}
-.btn-trial{background:linear-gradient(135deg,#7C3AED,#9333EA);box-shadow:0 6px 24px rgba(124,58,237,0.3)}.btn-trial:hover{box-shadow:0 8px 32px rgba(124,58,237,0.4)}.btn-trial::after{animation-delay:0s}
-.btn-course{background:linear-gradient(135deg,#6366F1,#818CF8);box-shadow:0 6px 24px rgba(99,102,241,0.25)}.btn-course:hover{box-shadow:0 8px 32px rgba(99,102,241,0.35)}.btn-course::after{animation-delay:0.8s}
-.btn-pdf{background:linear-gradient(135deg,#EC4899,#F472B6);box-shadow:0 6px 24px rgba(236,72,153,0.25)}.btn-pdf:hover{box-shadow:0 8px 32px rgba(236,72,153,0.35)}.btn-pdf::after{animation-delay:1.6s}
-.btn-results{background:linear-gradient(135deg,#8B5CF6,#A78BFA);box-shadow:0 6px 24px rgba(139,92,246,0.2)}.btn-results:hover{box-shadow:0 8px 32px rgba(139,92,246,0.3)}.btn-results::after{animation-delay:2.4s}
-.review{background:white;border-radius:20px;padding:22px 20px;margin-bottom:12px;box-shadow:0 2px 16px rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.06);position:relative}
+.btn-trial{background:linear-gradient(135deg,#7C3AED,#9333EA);box-shadow:0 6px 24px rgba(124,58,237,0.35)}.btn-trial:hover{box-shadow:0 10px 32px rgba(124,58,237,0.45)}.btn-trial::after{animation-delay:0s}
+.btn-course{background:linear-gradient(135deg,#6366F1,#818CF8);box-shadow:0 6px 24px rgba(99,102,241,0.28)}.btn-course:hover{box-shadow:0 10px 32px rgba(99,102,241,0.38)}.btn-course::after{animation-delay:0.8s}
+.btn-pdf{background:linear-gradient(135deg,#EC4899,#F472B6);box-shadow:0 6px 24px rgba(236,72,153,0.28)}.btn-pdf:hover{box-shadow:0 10px 32px rgba(236,72,153,0.38)}.btn-pdf::after{animation-delay:1.6s}
+.btn-results{background:linear-gradient(135deg,#8B5CF6,#A78BFA);box-shadow:0 6px 24px rgba(139,92,246,0.22)}.btn-results:hover{box-shadow:0 10px 32px rgba(139,92,246,0.32)}.btn-results::after{animation-delay:2.4s}
+
+/* Features */
+.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+.feature-card{background:white;border-radius:18px;padding:18px 16px;box-shadow:0 2px 12px rgba(139,92,246,0.07);border:1px solid rgba(139,92,246,0.07);transition:transform 0.2s,box-shadow 0.2s}
+.feature-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(139,92,246,0.12)}
+.feature-icon{font-size:26px;margin-bottom:8px}
+.feature-title{font-size:13px;font-weight:700;color:#1E1B4B;margin-bottom:4px}
+.feature-desc{font-size:12px;color:#6B7280;line-height:1.5}
+
+/* Reviews */
+.review{background:white;border-radius:20px;padding:22px 20px;margin-bottom:10px;box-shadow:0 2px 16px rgba(139,92,246,0.07);border:1px solid rgba(139,92,246,0.07);position:relative;transition:transform 0.2s,box-shadow 0.2s}
+.review:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,92,246,0.12)}
 .review-quote{position:absolute;top:10px;left:16px;font-size:52px;font-weight:800;color:#EDE9FE;line-height:1}
 .review-text{font-size:14px;color:#4B5563;line-height:1.65;margin-bottom:12px;position:relative;z-index:1}
 .review-footer{display:flex;align-items:center;gap:10px}
-.review-ava{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#C4B5FD,#A78BFA);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:14px}
+.review-ava{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:15px;flex-shrink:0}
+.ava-purple{background:linear-gradient(135deg,#C4B5FD,#7C3AED)}
+.ava-pink{background:linear-gradient(135deg,#F9A8D4,#EC4899)}
+.ava-indigo{background:linear-gradient(135deg,#A5B4FC,#6366F1)}
 .review-info .review-name{font-size:13px;font-weight:700;color:#1E1B4B}
 .review-info .review-meta{font-size:12px;color:#9CA3AF}
 .badge{display:inline-block;padding:3px 10px;border-radius:20px;margin-left:6px;background:linear-gradient(135deg,#7C3AED,#A78BFA);color:white;font-size:11px;font-weight:700}
-.msg-row{display:flex;gap:12px;margin-bottom:12px}
-.msg-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:16px;text-decoration:none;color:white;font-size:15px;font-weight:700;transition:all 0.25s;position:relative;overflow:hidden}
+
+/* Stars */
+.stars{color:#F59E0B;font-size:13px;margin-bottom:8px;letter-spacing:1px}
+
+/* Contact buttons */
+.msg-row{display:flex;gap:10px;margin-bottom:10px}
+.msg-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:18px;text-decoration:none;color:white;font-size:15px;font-weight:700;transition:all 0.25s;position:relative;overflow:hidden}
 .msg-btn::after{content:'';position:absolute;top:-50%;left:-60%;width:40%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.12),transparent);transform:rotate(25deg);animation:sheen 3.5s ease-in-out infinite}
 .msg-btn:hover{transform:translateY(-2px)}
-.msg-wa{background:#25D366;box-shadow:0 6px 20px rgba(37,211,102,0.25)}.msg-wa:hover{box-shadow:0 8px 28px rgba(37,211,102,0.35)}.msg-wa::after{animation-delay:0.4s}
-.msg-tg{background:#2AABEE;box-shadow:0 6px 20px rgba(42,171,238,0.25)}.msg-tg:hover{box-shadow:0 8px 28px rgba(42,171,238,0.35)}.msg-tg::after{animation-delay:1.2s}
-.social-grid{display:flex;gap:16px;margin-bottom:12px;justify-content:center}
-.social-btn{width:68px;height:68px;border-radius:18px;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.25s;box-shadow:0 4px 14px rgba(0,0,0,0.1)}
-.social-btn:hover{transform:translateY(-3px) scale(1.05)}
+.msg-wa{background:#25D366;box-shadow:0 6px 20px rgba(37,211,102,0.28)}.msg-wa:hover{box-shadow:0 10px 28px rgba(37,211,102,0.38)}.msg-wa::after{animation-delay:0.4s}
+.msg-tg{background:#2AABEE;box-shadow:0 6px 20px rgba(42,171,238,0.28)}.msg-tg:hover{box-shadow:0 10px 28px rgba(42,171,238,0.38)}.msg-tg::after{animation-delay:1.2s}
+
+/* Social grid */
+.social-grid{display:flex;gap:14px;margin-bottom:12px;justify-content:center}
+.social-btn{width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.25s;box-shadow:0 4px 14px rgba(0,0,0,0.1)}
+.social-btn:hover{transform:translateY(-4px) scale(1.07)}
 .social-btn.ig{background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF,#515BD4)}
 .social-btn.threads{background:#000}
 .social-btn svg{display:block}
-.footer{text-align:center;margin-top:32px}
+
+/* Footer */
+.footer{text-align:center;margin-top:36px}
 .footer-loc{font-size:13px;color:#9CA3AF;margin-bottom:4px}
 .footer-copy{font-size:11px;color:#C4B5FD;letter-spacing:0.5px}
+
+/* Animations */
 .fi{opacity:0;transform:translateY(18px);animation:fi .55s cubic-bezier(.22,1,.36,1) forwards}
 @keyframes fi{to{opacity:1;transform:none}}
-.d1{animation-delay:.05s}.d2{animation-delay:.12s}.d3{animation-delay:.19s}.d4{animation-delay:.26s}.d5{animation-delay:.33s}.d6{animation-delay:.4s}.d7{animation-delay:.47s}.d8{animation-delay:.54s}.d9{animation-delay:.61s}.d10{animation-delay:.68s}.d11{animation-delay:.75s}.d12{animation-delay:.82s}
+.d1{animation-delay:.05s}.d2{animation-delay:.12s}.d3{animation-delay:.19s}.d4{animation-delay:.26s}.d5{animation-delay:.33s}.d6{animation-delay:.4s}.d7{animation-delay:.47s}.d8{animation-delay:.54s}.d9{animation-delay:.61s}.d10{animation-delay:.68s}.d11{animation-delay:.75s}.d12{animation-delay:.82s}.d13{animation-delay:.89s}.d14{animation-delay:.96s}.d15{animation-delay:1.03s}.d16{animation-delay:1.1s}
 </style>
 </head>
 <body>
 <div class="page">
-  <div class="avatar-area fi d1"><div class="avatar-ring"><div class="avatar-img">SAT</div></div></div>
+
+  <!-- Avatar -->
+  <div class="avatar-area fi d1">
+    <div class="avatar-ring" role="img" aria-label="Intellight KZ логотип">
+      <div class="avatar-img">SAT</div>
+    </div>
+  </div>
+
+  <!-- Profile -->
   <div class="profile fi d2">
     <div class="handle">@intellight.kz</div>
     <div class="name"><em>Intellight</em> KZ</div>
     <div class="tagline">Подготовка к SAT в Казахстане<br>От первого урока до поступления в ВУЗ мечты 🎯</div>
   </div>
-  <div class="stats fi d3">
-    <div class="stat-card"><div class="stat-num">1500+</div><div class="stat-label">Балл SAT</div></div>
-    <div class="stat-card"><div class="stat-num">150+</div><div class="stat-label">Учеников</div></div>
-    <div class="stat-card"><div class="stat-num">+280</div><div class="stat-label">Ср. рост</div></div>
+
+  <!-- Stats -->
+  <div class="stats fi d3" role="list" aria-label="Статистика">
+    <div class="stat-card" role="listitem"><div class="stat-num">1500+</div><div class="stat-label">Балл SAT</div></div>
+    <div class="stat-card" role="listitem"><div class="stat-num">150+</div><div class="stat-label">Учеников</div></div>
+    <div class="stat-card" role="listitem"><div class="stat-num">+280</div><div class="stat-label">Ср. рост</div></div>
   </div>
+
+  <!-- CTA Buttons -->
   <div class="section-title fi d4">Начни сейчас</div>
 
-  <a href="https://api.whatsapp.com/send/?phone=77479486700&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9%20%D1%83%D1%80%D0%BE%D0%BA" class="btn btn-trial fi d5" target="_blank"><span class="ic">🎓</span>Бесплатный пробный урок<span class="arr">›</span></a>
+  <a href="https://api.whatsapp.com/send/?phone=77479486700&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9%20%D1%83%D1%80%D0%BE%D0%BA" class="btn btn-trial fi d5" target="_blank" rel="noopener noreferrer" aria-label="Записаться на бесплатный пробный урок через WhatsApp"><span class="ic">🎓</span>Бесплатный пробный урок<span class="arr">›</span></a>
 
-  <a href="https://api.whatsapp.com/send/?phone=77479486700&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D1%83%D1%80%D1%81%20SAT" class="btn btn-course fi d6" target="_blank"><span class="ic">📐</span>Регистрация на курсы SAT<span class="arr">›</span></a>
+  <a href="https://api.whatsapp.com/send/?phone=77479486700&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D1%83%D1%80%D1%81%20SAT" class="btn btn-course fi d6" target="_blank" rel="noopener noreferrer" aria-label="Записаться на курс SAT"><span class="ic">📐</span>Регистрация на курсы SAT<span class="arr">›</span></a>
 
-  <a href="https://api.whatsapp.com/send/?phone=77479486700&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20PDF" class="btn btn-pdf fi d7" target="_blank"><span class="ic">📄</span>PDF «5 ловушек SAT Math»<span class="arr">›</span></a>
+  <a href="https://api.whatsapp.com/send/?phone=77479486700&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20PDF" class="btn btn-pdf fi d7" target="_blank" rel="noopener noreferrer" aria-label="Получить PDF 5 ловушек SAT Math"><span class="ic">📄</span>PDF «5 ловушек SAT Math»<span class="arr">›</span></a>
 
-  <a href="https://www.instagram.com/intellight.kz" class="btn btn-results fi d8" target="_blank"><span class="ic">🏆</span>Результаты учеников<span class="arr">›</span></a>
+  <a href="https://www.instagram.com/intellight.kz" class="btn btn-results fi d8" target="_blank" rel="noopener noreferrer" aria-label="Посмотреть результаты учеников в Instagram"><span class="ic">🏆</span>Результаты учеников<span class="arr">›</span></a>
 
-  <div class="review fi d9">
-    <div class="review-quote">"</div>
-    <div class="review-text">Пришёл с 980 баллов. Через 3 месяца — 1340. Объясняют так, что даже Math перестал пугать. Лучшее вложение в будущее.</div>
-    <div class="review-footer"><div class="review-ava">А</div><div class="review-info"><div class="review-name">Арман, 10 класс <span class="badge">+360</span></div><div class="review-meta">Астана · 3 месяца на курсе</div></div></div>
+  <!-- Why us -->
+  <div class="section-title fi d9">Почему Intellight</div>
+  <div class="features fi d9">
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <div class="feature-title">Личный план</div>
+      <div class="feature-desc">Программа под ваш уровень и цель</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">Разбор ошибок</div>
+      <div class="feature-desc">Детальный анализ каждого теста</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📚</div>
+      <div class="feature-title">Все материалы</div>
+      <div class="feature-desc">PDF, тесты и разборы заданий</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💬</div>
+      <div class="feature-title">Поддержка</div>
+      <div class="feature-desc">Отвечаем на вопросы каждый день</div>
+    </div>
   </div>
 
-  <div class="section-title fi d10">Свяжитесь с нами</div>
+  <!-- Reviews -->
+  <div class="section-title fi d10">Отзывы учеников</div>
 
-  <div class="msg-row fi d10">
-    <a href="https://api.whatsapp.com/send/?phone=77479486700" class="msg-btn msg-wa" target="_blank">
-      <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <div class="review fi d10">
+    <div class="review-quote">"</div>
+    <div class="stars" aria-label="5 звёзд">★★★★★</div>
+    <div class="review-text">Пришёл с 980 баллов. Через 3 месяца — 1340. Объясняют так, что даже Math перестал пугать. Лучшее вложение в будущее.</div>
+    <div class="review-footer">
+      <div class="review-ava ava-purple" aria-hidden="true">А</div>
+      <div class="review-info">
+        <div class="review-name">Арман, 10 класс <span class="badge">+360</span></div>
+        <div class="review-meta">Астана · 3 месяца на курсе</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="review fi d11">
+    <div class="review-quote">"</div>
+    <div class="stars" aria-label="5 звёзд">★★★★★</div>
+    <div class="review-text">Reading and Writing казался невозможным — не понимала логику вопросов. После курса начала видеть паттерны и набрала 730 по секции. Спасибо!</div>
+    <div class="review-footer">
+      <div class="review-ava ava-pink" aria-hidden="true">Д</div>
+      <div class="review-info">
+        <div class="review-name">Диана, 11 класс <span class="badge">+290</span></div>
+        <div class="review-meta">Алматы · 4 месяца на курсе</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="review fi d12">
+    <div class="review-quote">"</div>
+    <div class="stars" aria-label="5 звёзд">★★★★★</div>
+    <div class="review-text">Начал за 2 месяца до экзамена с 1050. Итог — 1290. Структура занятий чёткая, домашние задания реально помогают. Поступил в университет мечты!</div>
+    <div class="review-footer">
+      <div class="review-ava ava-indigo" aria-hidden="true">Т</div>
+      <div class="review-info">
+        <div class="review-name">Тимур, 12 класс <span class="badge">+240</span></div>
+        <div class="review-meta">Астана · 2 месяца на курсе</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section-title fi d13">Свяжитесь с нами</div>
+
+  <div class="msg-row fi d13">
+    <a href="https://api.whatsapp.com/send/?phone=77479486700" class="msg-btn msg-wa" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       WhatsApp
     </a>
-  </div>
-
-  <div class="social-grid fi d11">
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/intellight.kz" class="social-btn ig" target="_blank" title="Instagram">
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-    </a>
-    <!-- Threads -->
-    <a href="https://www.threads.com/@aprilyesss" class="social-btn threads" target="_blank" title="Threads">
-      <svg width="28" height="28" viewBox="0 0 192 192" fill="white"><path d="M141.537 88.988a66.667 66.667 0 0 0-2.518-1.143c-1.482-27.307-16.403-42.94-41.457-43.1h-.34c-14.986 0-27.449 6.396-35.12 18.036l13.779 9.452c5.73-8.695 14.724-10.548 21.348-10.548h.229c8.249.053 14.474 2.452 18.503 7.129 2.932 3.405 4.893 8.11 5.864 14.05-7.314-1.243-15.224-1.626-23.68-1.14-23.82 1.371-39.134 15.24-38.35 34.72.395 9.832 5.14 18.307 13.357 23.853 6.945 4.69 15.893 7.008 25.2 6.527 12.267-.636 21.87-5.322 28.542-13.923 5.064-6.53 8.256-14.762 9.6-24.87 5.755 3.472 10.041 8.085 12.529 13.607 4.202 9.326 4.448 24.653-3.767 32.914-7.268 7.313-16.006 10.469-29.192 10.568-14.588-.11-25.584-4.782-32.675-13.882-6.637-8.525-10.091-20.552-10.264-35.73.173-15.18 3.627-27.205 10.264-35.73 7.09-9.1 18.087-13.772 32.675-13.882 14.692.112 25.834 4.835 33.1 14.036 3.536 4.476 6.187 10.107 7.916 16.744l14.852-3.993c-2.247-8.594-5.79-15.873-10.597-21.747-9.538-12.083-23.678-18.345-42.032-18.63h-.453c-18.228.28-32.298 6.58-41.85 18.73-8.487 10.793-12.87 25.38-13.048 43.36.179 17.98 4.561 32.567 13.048 43.36 9.552 12.15 23.622 18.45 41.85 18.73h.453c16.102-.118 28.422-4.684 38.8-14.378 12.832-11.982 13.08-29.989 7.612-42.108M99.87 141.28c-10.88.575-22.137-4.27-22.83-17.994-.514-10.183 7.17-21.573 30.645-22.926 2.678-.154 5.29-.204 7.836-.136 1.073 17.98-5.668 40.428-15.651 41.056"/></svg>
+    <!-- TODO: Replace href with your Telegram link, e.g. https://t.me/yourusername -->
+    <a href="#telegram" class="msg-btn msg-tg" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="white" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      Telegram
     </a>
   </div>
 
-  <div class="footer fi d12">
+  <!-- Social -->
+  <div class="social-grid fi d14">
+    <a href="https://www.instagram.com/intellight.kz" class="social-btn ig" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram @intellight.kz">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="https://www.threads.com/@aprilyesss" class="social-btn threads" target="_blank" rel="noopener noreferrer" title="Threads" aria-label="Threads @aprilyesss">
+      <svg width="26" height="26" viewBox="0 0 192 192" fill="white" aria-hidden="true"><path d="M141.537 88.988a66.667 66.667 0 0 0-2.518-1.143c-1.482-27.307-16.403-42.94-41.457-43.1h-.34c-14.986 0-27.449 6.396-35.12 18.036l13.779 9.452c5.73-8.695 14.724-10.548 21.348-10.548h.229c8.249.053 14.474 2.452 18.503 7.129 2.932 3.405 4.893 8.11 5.864 14.05-7.314-1.243-15.224-1.626-23.68-1.14-23.82 1.371-39.134 15.24-38.35 34.72.395 9.832 5.14 18.307 13.357 23.853 6.945 4.69 15.893 7.008 25.2 6.527 12.267-.636 21.87-5.322 28.542-13.923 5.064-6.53 8.256-14.762 9.6-24.87 5.755 3.472 10.041 8.085 12.529 13.607 4.202 9.326 4.448 24.653-3.767 32.914-7.268 7.313-16.006 10.469-29.192 10.568-14.588-.11-25.584-4.782-32.675-13.882-6.637-8.525-10.091-20.552-10.264-35.73.173-15.18 3.627-27.205 10.264-35.73 7.09-9.1 18.087-13.772 32.675-13.882 14.692.112 25.834 4.835 33.1 14.036 3.536 4.476 6.187 10.107 7.916 16.744l14.852-3.993c-2.247-8.594-5.79-15.873-10.597-21.747-9.538-12.083-23.678-18.345-42.032-18.63h-.453c-18.228.28-32.298 6.58-41.85 18.73-8.487 10.793-12.87 25.38-13.048 43.36.179 17.98 4.561 32.567 13.048 43.36 9.552 12.15 23.622 18.45 41.85 18.73h.453c16.102-.118 28.422-4.684 38.8-14.378 12.832-11.982 13.08-29.989 7.612-42.108M99.87 141.28c-10.88.575-22.137-4.27-22.83-17.994-.514-10.183 7.17-21.573 30.645-22.926 2.678-.154 5.29-.204 7.836-.136 1.073 17.98-5.668 40.428-15.651 41.056"/></svg>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer fi d16">
     <div class="footer-loc">📍 Астана, Казахстан</div>
     <div class="footer-copy">Intellight KZ © 2026</div>
   </div>
+
 </div>
 </body>
 </html>
