@@ -11,21 +11,21 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;background:#0D0A1A;color:white;overflow-x:hidden}
+body{font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;background:#F4F0FF;background-image:radial-gradient(ellipse 900px 600px at 50% 0%,rgba(139,92,246,0.14),transparent),radial-gradient(ellipse 600px 400px at 80% 100%,rgba(219,39,119,0.07),transparent),radial-gradient(ellipse 500px 400px at 10% 60%,rgba(99,102,241,0.07),transparent);color:#1E1B4B;overflow-x:hidden}
 
 /* Header */
-.header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;position:sticky;top:0;z-index:100;background:rgba(13,10,26,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(139,92,246,0.12)}
-.back-btn{display:flex;align-items:center;gap:8px;text-decoration:none;color:#A78BFA;font-size:14px;font-weight:600;transition:opacity 0.2s}
+.header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;position:sticky;top:0;z-index:100;background:rgba(244,240,255,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(139,92,246,0.12)}
+.back-btn{display:flex;align-items:center;gap:8px;text-decoration:none;color:#7C3AED;font-size:14px;font-weight:600;transition:opacity 0.2s}
 .back-btn:hover{opacity:0.7}
-.back-btn svg{width:20px;height:20px;stroke:#A78BFA;stroke-width:2.5;fill:none}
-.header-title{font-size:15px;font-weight:700;color:white}
+.back-btn svg{width:20px;height:20px;stroke:#7C3AED;stroke-width:2.5;fill:none}
+.header-title{font-size:15px;font-weight:700;color:#1E1B4B}
 .header-count{font-size:13px;color:#6B7280;font-weight:500}
 
 /* Hero text */
 .hero{padding:32px 20px 24px;text-align:center;max-width:600px;margin:0 auto}
 .hero-label{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:#A78BFA;font-weight:700;margin-bottom:10px}
-.hero-title{font-size:26px;font-weight:800;letter-spacing:-0.5px;margin-bottom:8px}
-.hero-title span{color:#A78BFA}
+.hero-title{font-size:26px;font-weight:800;letter-spacing:-0.5px;margin-bottom:8px;color:#1E1B4B}
+.hero-title span{color:#7C3AED}
 .hero-sub{font-size:14px;color:#6B7280;line-height:1.6}
 
 /* ── MOBILE CAROUSEL (default) ── */
@@ -58,7 +58,7 @@ body{font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;background:#0D0
 .mdot.active{width:20px;border-radius:3px;background:#7C3AED}
 
 /* Swipe hint */
-.swipe-hint{text-align:center;margin-top:12px;font-size:12px;color:rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;gap:6px}
+.swipe-hint{text-align:center;margin-top:12px;font-size:12px;color:rgba(107,114,128,0.7);display:flex;align-items:center;justify-content:center;gap:6px}
 
 /* ── DESKTOP CAROUSEL ── */
 .desktop-carousel{display:none;padding:0 40px 48px;max-width:1100px;margin:0 auto;position:relative}
@@ -80,8 +80,8 @@ body{font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;background:#0D0
 /* Stats bar */
 .stats-bar{display:flex;justify-content:center;gap:32px;padding:20px;max-width:500px;margin:0 auto 8px;border-top:1px solid rgba(139,92,246,0.1)}
 .sbar-item{text-align:center}
-.sbar-num{font-size:20px;font-weight:800;color:#A78BFA}
-.sbar-label{font-size:10px;color:#4B5563;text-transform:uppercase;letter-spacing:0.8px;margin-top:2px;font-weight:600}
+.sbar-num{font-size:20px;font-weight:800;color:#7C3AED}
+.sbar-label{font-size:10px;color:#9CA3AF;text-transform:uppercase;letter-spacing:0.8px;margin-top:2px;font-weight:600}
 
 /* Responsive */
 @media(min-width:768px){
